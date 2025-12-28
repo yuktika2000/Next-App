@@ -16,10 +16,10 @@ export default function Sidebar() {
   },[pathname])
 
     return (
-        <div className="pt-7 pb-4 bg-[#002C59] text-white w-20">
+        <div className="pt-18 pb-4 bg-[#002C59] text-white w-18">
             {menu_items.map((menu)=>(
-                <Link className={`p-4 flex justify-center ${pathname === menu.href ? "bg-white":""}`} href={menu.href} key={menu.id}>
-                    <img src={menu.img}/>
+                <Link className={`p-3 mb-2 flex gap-10 justify-center ${pathname === menu.href ? "bg-white":""}`} href={menu.href} key={menu.id}>
+                    <img src={pathname === menu.href ? `blue-${menu.img.slice(1)}`:menu.img}/>
                 </Link>
             ))}
         </div>

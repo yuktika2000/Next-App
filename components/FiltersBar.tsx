@@ -6,7 +6,7 @@ export default function FiltersBar() {
   return (
     <div className="flex justify-between items-center mt-6">
 
-      {/* Left: Dropdown (UNCHANGED) */}
+      {/* Left */}
       <select
         className="border border-[#e1e6e8] rounded-md
                    px-4 h-[40px] w-[260px]
@@ -19,7 +19,7 @@ export default function FiltersBar() {
         <option>Tax-Free Bonds</option>
       </select>
 
-      {/* Right: Date range (MATCHES IMAGE) */}
+      {/* Right */}
       <div className="flex items-center gap-6  text-[#555]">
         <span className="font-semibold">View Between Date Range</span>
 
